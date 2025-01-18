@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package greet;
+
+// Indica el paquete Go donde se generará el código.
+option go_package = "github.com/XavierCuases/gRPC-Go/greet;greet";
+
+service GreetService {
+    rpc Greet (GreetRequest) returns (GreetResponse);
+}
+
+message GreetRequest {
+    string name = 1;
+}
+
+message GreetResponse {
+    string message = 1;
+}
