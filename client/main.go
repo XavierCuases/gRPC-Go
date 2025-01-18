@@ -13,7 +13,7 @@ func main() {
 	// Conectar al servidor gRPC
 	conn, err := grpc.Dial("localhost:50051", grpc.WithInsecure())
 	if err != nil {
-		log.Fatalf("No se pudo conectar: %v", err)
+		log.Fatalf("No se pudo conectar1: %v", err)
 	}
 	defer conn.Close()
 
